@@ -1,0 +1,195 @@
+@use 'components' as c;
+@use 'navbar';
+@use 'footer';
+@use 'lightbox';
+
+.hero {
+	background-color: #000;
+
+	&-img {
+		width: 100%;
+		max-height: 300px;
+		object-fit: cover;
+		object-position: top;
+	}
+
+	&__texts {
+		color: #fff;
+		width: 90%;
+		margin: 0 auto;
+		padding: 40px 0;
+		@include c.grid(20px);
+
+		&-description {
+			font-size: 14px;
+			text-transform: uppercase;
+		}
+
+		&-title {
+			text-transform: uppercase;
+			font-size: 30px;
+			font-weight: 600;
+		}
+
+		&-details {
+			text-transform: capitalize;
+			font-size: 15px;
+
+			span {
+				font-weight: 500;
+			}
+		}
+
+		&-paragraph {
+			font-size: 14px;
+			opacity: 0.7;
+		}
+
+		&-cta {
+			@include c.mainButton(#fff);
+		}
+	}
+}
+
+
+/* == Gallery == */
+.gallery__article {
+	position: relative;
+	width: 100%;
+	height: 320px;
+	overflow: hidden;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: center;
+	padding: 30px 0;
+
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.3);
+		z-index: -1;
+	}
+
+	&:hover &__picture-img {
+		transform: scale(1.3) rotate(7deg);
+	}
+
+	&__picture {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		&-img {
+			position: absolute;
+			top: 0;
+			left: 0;		
+			object-fit: cover;			
+			width: 100%;
+			height: 100%;
+			cursor: pointer;
+			@include c.transition(transform, 0.3s);
+		}
+	}
+
+	&__texts {
+		@include c.grid(5px);
+		text-transform: capitalize;
+		width: 90%;
+		border-bottom: 1px solid #fff;
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+		position: relative;
+		z-index: 1;
+
+		&-date {
+			font-size: 14px;
+		}
+
+		&-title {
+			font-size: 20px;
+			font-weight: 600;
+		}
+
+		&-autor {
+			font-size: 15px;
+
+			&:first-letter {
+				text-transform: lowercase;
+			}
+		}
+	}
+
+	&-cta {
+		@include c.mainButton(#fff);
+		width: 90%;
+		justify-content: space-between;
+		margin: 0 auto;
+		position: relative;
+		z-index: 1;
+	}
+}
+
+@media screen and (min-width: 580px) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.hero {
+		height: 80vh;
+		background-image: url('../img/stories/tablet/moon-of-appalacia.jpg');
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		padding-left: 5vw;
+
+		&-img {
+			display: none;
+		}
+
+		&__texts {
+			padding: 0;
+			width: 400px;
+			margin: 0;
+			grid-gap: 15px;
+
+			&-title {
+				font-size: 35px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.hero {
+		height: 85vh;
+		background-image: url('../img/stories/desktop/moon-of-appalacia.jpg');
+		background-position: center;
+
+		&__texts-title {
+			font-size: 40px;
+		}
+	}
+
+	.gallery {
+		grid-template-columns: repeat(4,1fr);
+
+		&__article {
+			height: 350px;
+		}
+	}
+}

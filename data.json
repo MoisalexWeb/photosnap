@@ -1,0 +1,14 @@
+{
+    "yearly": {
+        "basic": "$190.00",
+        "pro": "$390.00",
+        "business": "$990.00",
+        "title": "per year"
+    },
+    "monthly": {
+        "basic": "$19.00",
+        "pro": "$39.00",
+        "business": "$99.00",
+        "title": "per month"
+    }
+}

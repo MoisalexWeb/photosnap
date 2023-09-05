@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<title>Frontend Mentor | Photosnap Website</title>
+</head>
+<body>
+
+	<header class="header">
+		<nav class="nav">
+			<div class="nav__container">
+				<a href="index.html" class="nav__logo" aria-label="Go to Photosnap main website">
+					<img src="img/logo.svg" alt="Photosnap logo" class="nav__logo-img" title="Photosnap logo">
+				</a>
+
+				<button class="nav__hamburger" aria-label="Menu button">
+					<span class="nav__hamburger-line nav__hamburger-line--one"></span>
+					<span class="nav__hamburger-line nav__hamburger-line--two"></span>
+					<span class="nav__hamburger-line nav__hamburger-line--three"></span>
+				</button>
+
+				<ul class="nav__menu">
+					<li>
+						<a href="#" class="nav__menu-links">stories</a>
+					</li>
+					<li>
+						<a href="#" class="nav__menu-links">features</a>
+					</li>
+					<li>
+						<a href="#" class="nav__menu-links">pricing</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="home">
+			<picture class="home__picture">
+				<source srcset="./img/home/desktop/create-and-share.jpg" media="(min-width: 1024px)">
+				<source srcset="./img/home/tablet/create-and-share.jpg" media="(min-width: 768px)">
+				<img src="./img/home/mobile/create-and-share.jpg" alt="Create and share your photos" class="home__picture-img">
+			</picture>
+
+			<div class="home__texts">
+				<h1 class="home__texts-title">
+					create and <br>
+					share your <br>
+					photo stories.
+				</h1>
+
+				<p class="home__texts-description">
+					Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.
+				</p>
+
+				<a href="#" class="home__texts-cta">
+					get an invite
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg>
+				</a>
+			</div>
+		</section>
+
+		<section class="beatiful">
+			<picture class="beatiful__picture">
+				<source srcset="./img/home/desktop/beautiful-stories.jpg" media="(min-width: 1024px)">
+				<source srcset="./img/home/tablet/beautiful-stories.jpg" media="(min-width: 768px)">
+				<img src="./img/home/mobile/beautiful-stories.jpg" class="beatiful__picture-img" alt="Beatiful stories">
+			</picture>
+
+			<div class="beatiful__texts">
+				<h2 class="beatiful__texts-title">
+					beatiful <br>
+					stories <br>
+					every time
+				</h2>
+
+				<p class="beatiful__texts-description">We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.</p>
+
+				<a href="#" class="beatiful__texts-cta">
+					view the stories
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg>
+				</a>
+			</div>
+		</section>
+
+		<section class="designed">
+			<picture class="designed__picture">
+				<source srcset="img/home/desktop/designed-for-everyone.jpg" media="(min-width: 1024px)">
+				<source srcset="img/home/tablet/designed-for-everyone.jpg" media="(min-width: 768px)">
+				<img src="img/home/mobile/designed-for-everyone.jpg" class="designed__picture-img" alt="">
+			</picture>
+
+			<div class="designed__texts">
+				<h2 class="designed__texts-title">
+					designed for <br>
+					everyone
+				</h2>
+
+				<p class="designed__texts-description">Photosnap can help you create stories that resonate with your audience. Our tool is designed for photographers of all levels, brands, businesses you name it.</p>
+
+				<a href="#" class="designed__texts-cta">
+					view the stories
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg>
+				</a>
+			</div>
+		</section>
+
+		<section class="stories">
+			<article class="stories__article">
+				<picture class="stories__article__picture">
+					<source srcset="img/stories/desktop/mountains.jpg" media="(min-width: 768px)">
+					<img src="img/stories/mobile/mountains.jpg" class="stories__article__picture-img" alt="Mountains">
+				</picture>
+
+				<div class="stories__article__texts">
+					<h3 class="stories__article__texts-title">the mountains</h3>
+					<p class="stories__article__texts-description">by John Appleseed</p>
+				</div>
+
+				<a href="#" class="stories__article__cta">
+					read story
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg>
+				</a>
+			</article>
+
+			<article class="stories__article">
+				<picture class="stories__article__picture">
+					<source srcset="img/stories/desktop/cityscapes.jpg" media="(min-width: 768px)">
+					<img src="img/stories/mobile/cityscapes.jpg" class="stories__article__picture-img" alt="City">
+				</picture>
+
+				<div class="stories__article__texts">
+					<h3 class="stories__article__texts-title">sunset cityscapes</h3>
+					<p class="stories__article__texts-description">by Benjamin Cruz</p>
+				</div>
+
+				<a href="#" class="stories__article__cta">
+					read story
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg>
+				</a>
+			</article>
+
+			<article class="stories__article">
+				<picture class="stories__article__picture">
+					<source srcset="img/stories/desktop/18-days-voyage.jpg" media="(min-width: 768px)">
+					<img src="img/stories/mobile/18-days-voyage.jpg" class="stories__article__picture-img" alt="Child walking">
+				</picture>
+
+				<div class="stories__article__texts">
+					<h3 class="stories__article__texts-title">18 days voyage</h3>
+					<p class="stories__article__texts-description">by Alexei Borodin</p>
+				</div>
+
+				<a href="#" class="stories__article__cta">
+					read story
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg>
+				</a>
+			</article>
+
+			<article class="stories__article">
+				<picture class="stories__article__picture">
+					<source srcset="img/stories/desktop/architecturals.jpg" media="(min-width: 768px)">
+					<img src="img/stories/mobile/architecturals.jpg" class="stories__article__picture-img" alt="Architecture">
+				</picture>
+
+				<div class="stories__article__texts">
+					<h3 class="stories__article__texts-title">architecturals</h3>
+					<p class="stories__article__texts-description">by Samantha Brooke</p>
+				</div>
+
+				<a href="#" class="stories__article__cta">
+					read story
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg>
+				</a>
+			</article>
+		</section>
+	</main>
+	
+</body>
+</html>
