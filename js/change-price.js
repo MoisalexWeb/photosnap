@@ -4,7 +4,7 @@ const pricingBtn = document.querySelector(".plan__toggle__button"),
 
 const changePrice = async (plan) => {
     try {
-        const res = await fetch("data.json")
+        const res = await fetch("https://github.com/MoisalexWeb/photosnap/data.json")
         const data = await res.json()
         prices.forEach((price, index) => {
             price.textContent = data[plan][price.dataset.price]
